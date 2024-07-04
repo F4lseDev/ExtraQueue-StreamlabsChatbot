@@ -1,0 +1,61 @@
+{
+  "output_file": "Settings/settings.json",
+  "Command": {
+    "type": "textbox",
+    "value": "!mixed",
+    "label": "Command",
+    "tooltip": "The command to enter the Queue",
+    "group": "Core"
+  },
+  "Permission": {
+    "type": "dropdown",
+    "value": "everyone",
+    "items": ["everyone","moderator","subscriber","user_specific","editor"],
+    "label": "Permission",
+    "tooltip": "Who is able to use the command",
+    "group": "Core"
+  },
+  "Response": {
+      "type": "textbox",
+      "value": "ist der Queue beigetreten",
+      "label": "Response",
+      "tooltip": "MSG for the user if command executed",
+      "group": "Core"
+    },
+    "btnStart": {
+      "type": "button",
+      "label": "Start Queue",
+      "tooltip": "Starts the Queue!",
+      "function": "StartQueue",
+      "wsevent": ""
+    },
+    "btnStop": {
+      "type": "button",
+      "label": "Stop Queue",
+      "tooltip": "Stop the Queue!",
+      "function": "StopQueue",
+      "wsevent": ""
+    },
+    "btnall": {
+      "type": "button",
+      "label": "Draw 4 Players from the Queue",
+      "tooltip": "Draw 4 Players from the Queue!",
+      "function": "DrawQueueAll",
+      "wsevent": ""
+    },
+    "btnNew": {
+      "type": "button",
+      "label": "Draw new one from the Queue",
+      "tooltip": "Draw New One from the Queue!",
+      "function": "DrawQueue",
+      "wsevent": ""
+    },
+    "btnClear": {
+      "type": "button",
+      "label": "Clear the Queue",
+      "tooltip": "Clear the Queue!",
+      "function": "ClearQueue",
+      "wsevent": ""
+    }
+
+}
